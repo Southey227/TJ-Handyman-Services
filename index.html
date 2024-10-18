@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TJ Handyman Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -21,16 +21,26 @@
         }
 
         header {
-            background-color: #28a745;
-            padding: 20px;
+            background-image: url('https://source.unsplash.com/1600x600/?tools,construction');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
 
         nav {
             display: flex;
             justify-content: center;
             background-color: #333;
+            padding: 10px 0;
         }
 
         nav a {
@@ -38,6 +48,8 @@
             padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
         }
 
         nav a:hover {
@@ -46,30 +58,35 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
         }
 
-        h1 {
+        h2 {
             color: #333;
             margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        h2 {
-            color: #28a745;
-            margin-bottom: 10px;
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
         }
 
         .content {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         .services-section,
         .portfolio-section {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            margin-bottom: 40px;
         }
 
         .service-card {
@@ -77,37 +94,51 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-info {
+            background-color: #28a745;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
         }
 
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .contact-info {
-            background-color: #28a745;
-            color: white;
-            padding: 20px;
-        }
-
-        .contact-info h2 {
-            margin-bottom: 10px;
-        }
-
-        .contact-info p {
-            margin-bottom: 5px;
+            padding: 20px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Header with Background Image -->
     <header>
         <h1>Welcome to TJ Handyman Services</h1>
     </header>
@@ -121,32 +152,63 @@
 
     <!-- Main Content -->
     <div class="container">
+        <!-- Home Section -->
         <section id="home">
             <h2>Our Mission</h2>
             <div class="content">
                 <p>At TJ Handyman Services, we understand that maintaining and enhancing your property can be both time-consuming and challenging. Whether it's your home or business, you deserve a space that is not only functional but also reflects your personal style and values. That's where we come in. Based in [Your Location], we are a team of dedicated professionals offering a wide range of handyman services tailored to meet your specific needs.</p>
-                <p>Our mission is to provide high-quality, reliable, and affordable handyman services that exceed your expectations. We take pride in our workmanship and are committed to delivering exceptional results on every project, big or small. Your satisfaction is our top priority, and we strive to build lasting relationships with our clients through trust, integrity, and outstanding service.</p>
+                <p>Our mission is to provide high-quality, reliable, and affordable handyman services that exceed your expectations. We take pride in our workmanship and are committed to delivering exceptional results on every project, big or small.</p>
             </div>
         </section>
 
+        <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio-section">
             <h2>Our Portfolio</h2>
             <div class="services-section">
                 <div class="service-card">
+                    <img src="/mnt/data/0af3c57d-a91a-40ff-8da1-b356a096b3b2.JPG" alt="Project 1">
                     <h3>Project 1</h3>
-                    <p>Description of a past project</p>
+                    <p>Description of a past project.</p>
                 </div>
                 <div class="service-card">
+                    <img src="/mnt/data/1c6682f8-cccc-4e46-9378-7177cb724bb2.JPG" alt="Project 2">
                     <h3>Project 2</h3>
-                    <p>Description of a past project</p>
+                    <p>Description of a past project.</p>
                 </div>
                 <div class="service-card">
+                    <img src="/mnt/data/2ea5b01e-2a71-4549-b811-6528af2265da.JPG" alt="Project 3">
                     <h3>Project 3</h3>
-                    <p>Description of a past project</p>
+                    <p>Description of a past project.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/mnt/data/5c004900-13ac-4e1a-b163-f3f79cb89d94.JPG" alt="Project 4">
+                    <h3>Project 4</h3>
+                    <p>Description of a past project.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/mnt/data/64b6e5dd-27a1-4ba8-a460-7a09dc011a1b.JPG" alt="Project 5">
+                    <h3>Project 5</h3>
+                    <p>Description of a past project.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/mnt/data/255b00d9-75e9-4111-8e8e-ca957df9e92c.JPG" alt="Project 6">
+                    <h3>Project 6</h3>
+                    <p>Description of a past project.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/mnt/data/998b9b2e-ce74-4f88-bfc2-5ba4f2e26ac6.JPG" alt="Project 7">
+                    <h3>Project 7</h3>
+                    <p>Description of a past project.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/mnt/data/1213134c-66ae-4437-af9e-5ec74266d246.JPG" alt="Project 8">
+                    <h3>Project 8</h3>
+                    <p>Description of a past project.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="contact-info">
             <h2>Contact Us</h2>
             <p><strong>Email:</strong> info@tjhandymanservices.com</p>

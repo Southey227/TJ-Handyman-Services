@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TJ Handyman Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #28a745;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #28a745;
+            transition: 0.3s;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .services-section,
+        .portfolio-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact-info {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to TJ Handyman Services</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="home">
+            <h2>Our Mission</h2>
+            <div class="content">
+                <p>At TJ Handyman Services, we understand that maintaining and enhancing your property can be both time-consuming and challenging. Whether it's your home or business, you deserve a space that is not only functional but also reflects your personal style and values. That's where we come in. Based in [Your Location], we are a team of dedicated professionals offering a wide range of handyman services tailored to meet your specific needs.</p>
+                <p>Our mission is to provide high-quality, reliable, and affordable handyman services that exceed your expectations. We take pride in our workmanship and are committed to delivering exceptional results on every project, big or small. Your satisfaction is our top priority, and we strive to build lasting relationships with our clients through trust, integrity, and outstanding service.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2>Our Portfolio</h2>
+            <div class="services-section">
+                <div class="service-card">
+                    <h3>Project 1</h3>
+                    <p>Description of a past project</p>
+                </div>
+                <div class="service-card">
+                    <h3>Project 2</h3>
+                    <p>Description of a past project</p>
+                </div>
+                <div class="service-card">
+                    <h3>Project 3</h3>
+                    <p>Description of a past project</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> info@tjhandymanservices.com</p>
+            <p><strong>Phone:</strong> +44 1234 567890</p>
+            <p><strong>Location:</strong> [Your Location]</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TJ Handyman Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
